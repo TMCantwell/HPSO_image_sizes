@@ -1,5 +1,5 @@
 """ This program calculates the total image storage for a HPSO. Values used are
-taken from Table 8 in SKA-TEL-SDP-0000038 revision 02 """
+taken from Table 8 and Table 9 in SKA-TEL-SDP-0000038 revision 02 """
 
 
 class HPSO:
