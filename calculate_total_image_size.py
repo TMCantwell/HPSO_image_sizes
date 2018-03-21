@@ -53,6 +53,8 @@ Continuum_38a = HPSO(name='Continuum:38a', size_single_image=110.7e12,
                      total_time=1000, number_fields=61, time_res_of_image=6)
 Continuum_38b = HPSO(name='Continuum:38a', size_single_image=112.5e12,
                      total_time=1000, number_fields=1, time_res_of_image=6)
+Cosmology_storage = Magnetism_27.size_single_image \
+    * (Magnetism_27.time_per_field/Magnetism_27.time_per_image)*9
 
 eor_1.calc_storage()
 eor_2a.calc_storage()
@@ -67,3 +69,4 @@ Continuum_37b.calc_storage()
 Continuum_37c.calc_storage()
 Continuum_38a.calc_storage()
 Continuum_38b.calc_storage()
+print("The storage for HPSO Cosmology:33 is :\t"+str(Cosmology_storage/1e15))
