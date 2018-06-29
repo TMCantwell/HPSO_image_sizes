@@ -1,5 +1,6 @@
-# HPSO_image_sizes
+# Milestone 13
 
-This file calculates the image storage requirements at SRCs for each HPSO. 
+This file recreates the most important figures and tables for the memo associated with milestone 13 of the AENEAS project. 
 
-Values used are taken from Table 8 and Table 9 in SKA-TEL-SDP-0000038 revision 02.
+The tables and figures can be recreated for different SKA projects by replacing the information contained in the csv file. 
+
