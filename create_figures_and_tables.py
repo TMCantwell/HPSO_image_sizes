@@ -59,7 +59,7 @@ def size_single_visibility(df):
                                      * df['length of single observation (hrs)']
                                      / df['time resolution (s)']) \
                                   * df['number polarisations']*bytes_per_vis \
-                                  * df['number of channels']/1e12
+                                  * df['number of channels vis']/1e12
     return 0
 
 
@@ -134,15 +134,16 @@ def calculate_num_vis_data_products_per_year(df):
 def table_1(df, file_name):
     num_rows = df.shape[0]
     vis_cols = ['name', 'channel res (kHz)', 'time resolution (s)',
-                'number of channels', 'number of pointings',
+                'number of channels vis', 'number of pointings',
                 'number polarisations', 'total time (hrs)', 'number of pixels',
                 'total vis storage (PB)']
     nip_cols = ['name', 'channel res (kHz)', 'time resolution (s)',
                 'number of channels', 'number of pointings',
                 'number polarisations', 'total time (hrs)', 'number of pixels',
                 'NIP_storage (PB)']
-    image_cols = ['name', 'length of single observation (hrs)',
-                  'time resolution (s)', 'number of channels',
+    image_cols = ['name', 'channel res (kHz)',
+                  'length of single observation (hrs)',
+                  'number of channels',
                   'number of pointings', 'number polarisations',
                   'total time (hrs)', 'number of pixels',
                   'total image storage (PB)']
